@@ -1,0 +1,95 @@
+#app {
+  .upcoming-shows.live {
+    position: relative;
+    background-color: $white;
+    bottom: unset;
+    width: 50%;
+    h2 {
+      text-align: left;
+      color: $gray-80;
+      font-size: $fz-xl;
+    }
+    li {
+      font-size: $fz-lg;
+      border-color: $gray-80;
+      &:last-child {
+        border-bottom: 1px solid $gray-80;
+      }
+    }
+    .month {
+      font-weight: bold;
+    }
+    .date {
+      font-size: $fz-xxl;
+      line-height: 2.5rem;
+    }
+    .time {
+      margin-right: 50px;
+    }
+    .place {
+      width: auto;
+      justify-content: center;
+      &:hover {
+        background-color: $white;
+      }
+    }
+    .venue {
+      color: $gray-80;
+    }
+  }
+  .upcoming-shows {
+    position: absolute;
+    padding: 20px;
+    background-color: rgba($black, 0.7);
+    bottom: 3vh;
+    // top: 140px;
+    h2 {
+      text-align: center;
+      color: $white;
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    $shows-list-spacing: 8px;
+    li {
+      border-top: 1px solid $white;
+      padding-top: $shows-list-spacing;
+      margin-top: $shows-list-spacing;
+      font-size: 14px;
+      align-items: flex-center;
+      &:last-child {
+        border-bottom: 1px solid $white;
+        padding-bottom: $shows-list-spacing;
+      }
+    }
+    .time,
+    .place {
+      padding: 4px 10px;
+    }
+    .time {      
+      background-color: $white;
+      text-align: center;
+      margin-right: $shows-list-spacing;
+    }
+    .month {
+      text-transform: uppercase;
+    }
+    .date {
+      color: $red;
+      font-weight: bold;      
+    }
+    .place {
+      width: 100%;
+      &:hover {
+        background-color: rgba($color-1, 0.5);
+      }
+    }
+    .venue {
+      color: $white;
+    }
+    .location {
+      color: $gray-40;
+      font-style: italic;
+    }
+  }
+}

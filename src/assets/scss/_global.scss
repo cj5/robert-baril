@@ -1,0 +1,29 @@
+#app {
+  font-family: $font-1;
+  @media (min-width: 1300px) {
+    .container {
+      max-width: 1220px;
+    }
+  }
+  h1,
+  h2,
+  h3 {
+    text-transform: uppercase;
+  }
+  a,
+  a {
+    transition: $tran;
+    &:hover {
+      color: $color-1;
+    }
+  }
+  .header-spacing {
+    margin-top: 100px;
+  }
+
+  .footer {
+    background-color: lighten($black, 13%);
+    color: $white;
+    text-align: center;
+  }
+}

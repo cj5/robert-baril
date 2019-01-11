@@ -1,21 +1,22 @@
 <template>
   <div id="app">
     <Header />
-    <HomePage />
+    <!-- <RouteHome /> -->
+    <routerView />
     <Footer />
   </div>
 </template>
 
 <script>
 import Header from './components/Header'
-import HomePage from './components/HomePage'
+// import RouteHome from './components/RouteHome'
 import Footer from './components/Footer'
 
 export default {
   name: 'app',
   components: {
     Header,
-    HomePage,
+    // RouteHome,
     Footer
   }
 }

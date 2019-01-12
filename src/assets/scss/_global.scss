@@ -17,6 +17,24 @@
       color: $color-1;
     }
   }
+  .button {
+    position: relative;
+    padding: 8px 20px;
+    background-color: $white;
+    color: $color-1;
+    font-size: $fz-sm;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid $color-1;
+    box-shadow: 3px 3px 8px $gray-40;
+    border-radius: 3px;
+    &:hover {
+      background-color: $color-1;
+      color: $white;
+      transform: translate(2px, 2px);
+      box-shadow: none;
+    }
+  }
   .header-spacing {
     margin-top: 100px;
   }
@@ -25,5 +43,6 @@
     background-color: lighten($black, 13%);
     color: $white;
     text-align: center;
+    border-top: 2px solid $color-1;
   }
 }

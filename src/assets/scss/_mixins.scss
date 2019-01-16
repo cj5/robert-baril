@@ -1,0 +1,20 @@
+@mixin fancy-underline {
+  color: $gray-15;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: $color-1;
+    transition: $tran;
+  }
+  &:hover {
+    color: $white;
+    &:after {
+      width: 100%;
+    }
+  }
+}

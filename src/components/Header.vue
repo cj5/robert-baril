@@ -2,7 +2,9 @@
   <div class="header-wrapper">
     <div class="container">
       <div class="header d-flex justify-content-between align-items-center">
-        <h1 class="header-title">Robert Baril</h1>
+        <h1 class="header-title">
+          <router-link to="/" exact>Robert Baril</router-link>
+        </h1>
         <nav>
           <ul class="d-flex">
             <li>

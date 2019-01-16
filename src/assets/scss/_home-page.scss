@@ -1,13 +1,13 @@
 #app {
+  .home {
+    a {
+      @include fancy-underline;
+    }
+  }
   .hero {
     width: 100%;
     img {
       width: 100%;
     }
-  }
-  .video-wrapper {
-    max-width: 800px;
-    height: 500px;
-    margin: 0 auto;
   }
 }

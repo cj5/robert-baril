@@ -1,0 +1,18 @@
+#app {
+  @media (max-width: 1200px) {
+    .home .upcoming-shows {
+      top: 130px;
+      bottom: auto;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .home .upcoming-shows {
+      top: 113px;
+      left: 10px;
+      li:last-child {
+        display: none !important;
+      }
+    }
+  }
+}

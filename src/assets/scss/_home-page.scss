@@ -1,9 +1,4 @@
 #app {
-  .home {
-    a {
-      @include fancy-underline;
-    }
-  }
   .hero {
     width: 100%;
     img {

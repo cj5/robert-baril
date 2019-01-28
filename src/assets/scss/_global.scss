@@ -15,6 +15,12 @@
     transition: $tran;
     &:hover {
       color: $color-1;
+      &:after {
+        width: 0;
+      }
+    }
+    &.fancy-underline {
+      @include fancy-underline;
     }
   }
   .button {

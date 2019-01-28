@@ -52,12 +52,13 @@
       right: 0;
     }
   }
+  .home .upcoming-shows {
+    top: 250px;
+  }
   .upcoming-shows {
     position: absolute;
     padding: 20px;
     background-color: rgba($black, 0.7);
-    bottom: 3vh;
-    // top: 140px;
     h2 {
       text-align: center;
       color: $white;

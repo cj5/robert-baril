@@ -41,14 +41,15 @@ $font-2: 'Volkhov', Helvetica, sans-serif;
 
 // ===========================
 // font-sizes
-$fz-base: 1rem;
+$base: 0.0625rem;
 
-$fz-sm: $fz-base;
-$fz-md: $fz-base * 1.125; // 18px
-$fz-lg: $fz-base * 1.375; // 22px
-$fz-xl: $fz-base * 1.75; // 28px
-$fz-xxl: $fz-base * 2.5; // 40px
-$fz-xxxl: $fz-base * 3.75; // 60px
+$fz-xs: $base*14;
+$fz-sm: $base*16;
+$fz-md: $base*18;
+$fz-lg: $base*22;
+$fz-xl: $base*28;
+$fz-xxl: $base*40;
+$fz-xxxl: $base*60;
 
 .fz-sm { font-size: $fz-sm; }
 .fz-md { font-size: $fz-md; }
@@ -56,6 +57,17 @@ $fz-xxxl: $fz-base * 3.75; // 60px
 .fz-xl { font-size: $fz-xl; }
 .fz-xxl { font-size: $fz-xxl; }
 .fz-xxl { font-size: $fz-xxl; }
+
+// header
+$header-height: 100px;
+
+// ===========================
+// navicon
+$naviconSpacing: 8px;
+$naviconSpacing2: $naviconSpacing * 2;
+$naviconThickness: 2px;
+$naviconWidth: 24px; 
+$naviconHeight: $naviconSpacing2 + $naviconThickness;
 
 // ===========================
 // borders
@@ -72,6 +84,16 @@ $border-radius-lg: 6px;
 // transitions
 $tran: 0.2s all ease-in-out;
 $tran4: 0.4s all ease-in-out;
+
+// ===========================
+// media queries
+$bp-xl: '(max-width: 1199px)';
+$bp-lg: '(max-width: 991px)';
+$bp-md: '(max-width: 767px)';
+$bp-min-md: '(min-width: 768px)';
+$bp-sm: '(max-width: 575px)';
+$bp-xs: '(max-width: 419px)';
+$bp-xxs: '(max-width: 400px)';
 
 // ===========================
 // BOOTSTRAP

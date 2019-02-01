@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div class="ribbon bg-black pt-100 d-flex justify-content-center">
+    <div class="ribbon bg-black d-flex justify-content-center">
       <img src="../assets/images/baril-ribbon.jpg" alt="">
     </div>
-    <div class="py-8">
+    <div class="py-5 py-md-8">
       <div class="container">
-        <h2 class="text-center mb-8">Robert Baril. Comic. Lover. Friend.</h2>
+        <h2 class="text-center mb-5 mb-md-8">Robert Baril. Comic. Lover. Friend.</h2>
         <div class="row content mb-8">
-          <div class="col-md-6 pl-md-0">
+          <div class="col-md-6 pl-md-0 mb-4 mb-md-0">
             <img src="../assets/images/baril-stand-up.jpg" alt="Robert Baril stand up" class="w-100">
           </div>
           <div class="col-md-6 pr-md-0 d-flex align-items-center">

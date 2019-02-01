@@ -5,4 +5,44 @@
       width: 100%;
     }
   }
+  .home .upcoming-shows {
+    top: 250px;
+  }
+  @media #{$bp-xl} {
+    .home .upcoming-shows {
+      top: 130px;
+      bottom: auto;
+    }
+  }
+  @media #{$bp-lg} {
+    .home .upcoming-shows {
+      top: 113px;
+      left: 10px;
+      li:last-child {
+        display: none !important;
+      }
+    }
+  }
+  @media (min-width: 768px) and (max-width: 840px) {
+    .home .upcoming-shows li:nth-child(4) {
+      display: none !important;
+    }
+  }
+  @media #{$bp-md} {
+    .home .upcoming-shows {
+      position: relative;
+      display: inline-block;
+      top: 0;
+      left: 0;
+      margin-bottom: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+      .time {
+        margin-right: 30px;
+      }
+    }
+    .video-wrapper {
+      height: 300px;
+    }
+  }
 }

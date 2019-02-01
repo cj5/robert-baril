@@ -1,3 +1,6 @@
+html {
+  overflow-x: hidden;
+}
 #app {
   font-family: $font-1;
   background-color: $gray-7;
@@ -25,6 +28,7 @@
   }
   .button {
     position: relative;
+    display: inline-block;
     padding: 8px 20px;
     background-color: transparent;
     color: $color-1;
@@ -46,10 +50,25 @@
     margin: auto;
   }
   .header-spacing {
-    margin-top: 100px;
+    margin-top: $header-height;
+    @media #{$bp-md} {
+      margin-top: 0;
+    }
   }
-  .pt-100 {
+  .ribbon {
     padding-top: 100px;
+    @media #{$bp-md} {
+      padding-top: 0;
+    }
+  }
+
+  .live {
+    img {
+      width: 100%;
+      @media #{$bp-lg} {
+        max-width: 450px;
+      }
+    }
   }
 
   .video-wrapper {

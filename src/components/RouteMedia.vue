@@ -1,6 +1,6 @@
 <template>
   <div class="header-spacing">
-    <div class="media py-8">
+    <div class="media py-5 py-md-8">
       <div class="container">
         <div class="content">
           <h2 class="mb-5">Stand-up</h2>
@@ -13,7 +13,7 @@
           <div class="bdr-color-1 mt-8"></div>
           <h2 class="mt-4 mb-5">Radio</h2>
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 mb-4 mb-lg-0">
               <img class="w-100" src="../assets/images/baril-radio.jpg" alt="">
             </div>
             <div class="col-lg-6 d-flex align-items-center">

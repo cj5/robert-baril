@@ -1,5 +1,5 @@
 <template>
-<div class="container">
+<div>
   <div class="upcoming-shows">
     <h2>Upcoming Shows</h2>
     <ul>

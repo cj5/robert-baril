@@ -47,10 +47,10 @@ export default {
       events: events
     }
   },
-  mounted() {
-    // axios
-    //   .get('https://api.coindesk.com/v1/bpi/currentprice.json')
-    //   .then(response => (this.info = response))
-  }
+  // mounted() {
+  //   axios
+  //     .get('https://graph.facebook.com/me?fields=id,name,posts{id,message}&access_token=EAAmpE2pjvacBAKO5kIz0RZBWUYVGQzk6pyBgkVLrweZBy5DU7Ej0BAskFtdjSD0ZAUxbBZAZCpSi2GbeZAYhKk8gSdXwW6grJBZC4Emgt2BdTPJrqzwCO4RfqEOjN6iOZCOQx3CqYcnpT9MlZBznQP0FGyxVRiPabsZBYPlPgPBJxkr0j9EDQ7vzjY1ZAxw7CAtonPqQZB9j7ZCDBkbu5cToZAKWSb')
+  //     .then(response => (this.info = response))
+  // }
 }
 </script>

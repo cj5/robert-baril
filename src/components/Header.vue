@@ -73,7 +73,6 @@ export default {
   },
   methods: {
     toggleMobileNav() {
-      console.log('clicked navicon');
       if (this.isMobileNavOpen) {
         this.isMobileNavOpen = false;
         this.classOpenMobile = ''

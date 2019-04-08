@@ -1,15 +1,20 @@
 <template>
-  <div class="header-spacing">
-    <div class="py-5">
-      <div class="container">
-        <p>RouteContact</p>
-      </div>
+  <div>
+    <div class="header-spacing content">
+      <Contact noBgImg />
     </div>
+    <div class="bdr"></div>
+    <img class="w-100" src="../assets/images/baril-stand-up-4-crop.jpg" alt="">
   </div>
 </template>
 
 <script>
+import Contact from './Contact'
+
 export default {
-  name: "RouteContact"
+  name: "RouteContact",
+  components: {
+    Contact
+  }
 }
 </script>

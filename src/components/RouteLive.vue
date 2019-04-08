@@ -2,7 +2,7 @@
   <div class="live header-spacing">
     <div class="py-5 py-md-8">
       <div class="container">
-        <div class="row">
+        <div class="row mb-5">
           <div class="col-lg-6">
             <div class="upcoming-shows live pr-xl-5 mb-5 mb-lg-0">
               <h2>Upcoming Shows</h2>
@@ -29,28 +29,25 @@
             <img src="../assets/images/baril-headshot.jpg" alt="robert baril">
           </div>
         </div>
-        <!-- <p>{{ info }}</p> -->
       </div> <!-- .container -->
     </div>
+    <Contact />
   </div>
 </template>
 
 <script>
-// import axios from 'axios'
 import events from '../../events.json'
+import Contact from './Contact'
 
 export default {
   name: "RouteLive",
+  components: {
+    Contact
+  },
   data() {
     return {
-      // info: null,
       events: events
     }
-  },
-  // mounted() {
-  //   axios
-  //     .get('https://graph.facebook.com/me?fields=id,name,posts{id,message}&access_token=EAAmpE2pjvacBAKO5kIz0RZBWUYVGQzk6pyBgkVLrweZBy5DU7Ej0BAskFtdjSD0ZAUxbBZAZCpSi2GbeZAYhKk8gSdXwW6grJBZC4Emgt2BdTPJrqzwCO4RfqEOjN6iOZCOQx3CqYcnpT9MlZBznQP0FGyxVRiPabsZBYPlPgPBJxkr0j9EDQ7vzjY1ZAxw7CAtonPqQZB9j7ZCDBkbu5cToZAKWSb')
-  //     .then(response => (this.info = response))
-  // }
+  }
 }
 </script>

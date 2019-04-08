@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <div class="container">
-      <p class="py-3">&copy;2019 | Robert Baril Comedy</p>
+      <p class="py-4">&copy;2019 | Robert Baril Comedy</p>
     </div>
   </div>
 </template>

@@ -5,6 +5,8 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import VueRouter from 'vue-router'
 import axios from 'axios'
+import VueMoment from 'vue-moment'
+import moment from 'moment-timezone'
 
 import RouteHome from './components/RouteHome'
 import RouteLive from './components/RouteLive'
@@ -14,6 +16,9 @@ import RouteContact from './components/RouteContact'
 
 Vue.use(BootstrapVue)
 Vue.use(VueRouter)
+Vue.use(VueMoment, {
+  moment,
+})
 Vue.prototype.$http = axios
 
 const routes = [

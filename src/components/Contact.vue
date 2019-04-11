@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div :class="noBorder ? '' : 'bdr'"></div>
+    <div v-if="!noBorder" class="bdr"></div>
     <div class="contact pb-5" :class="noBgImg ? '' : 'bg-img'">
       <div class="filter"></div>
       <div class="container">
@@ -8,9 +8,9 @@
           <h2 class="py-5">contact</h2>
           <EmailIcon />
           <div class="icon-wrapper">
-            <a href="#" target="_blank">
+            <a :href="'mailto:'+email">
               <svg class="icon icon-mail"><use xlink:href="#icon-mail"></use></svg>
-              <p>please.send.me.roberts.email@stand-in.com</p>
+              <p>{{ email }}</p>
             </a>
           </div>
           <FacebookIcon />
@@ -40,6 +40,11 @@ export default {
     thin: Boolean,
     noBorder: Boolean,
     noBgImg: Boolean
+  },
+  data() {
+    return {
+      email: 'subcomic23@yahoo.com'
+    }
   }
 }
 </script>

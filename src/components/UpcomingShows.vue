@@ -1,71 +1,37 @@
 <template>
 <div>
-  <div class="upcoming-shows">
-    <h2>Upcoming Shows</h2>
-    <ul>
+  <ul>
 
-      <li class="d-flex">
-        <div class="time d-flex flex-column">
-          <span class="month">Jan</span>
-          <span class="date">17</span>
-        </div>
-        <a href="#" class="place d-flex flex-column">
-          <span class="venue">Acme Comedy Co.</span>
-          <span class="location">Minneapolis, MN</span>
-        </a>
-      </li>
+    <li v-for="(item, key) in events" :key="key" class="d-flex">
+      <div class="time d-flex flex-column">
+        <span class="month">{{ item.month }}</span>
+        <span class="date">{{ item.date }}</span>
+      </div>
+      <div class="place d-flex flex-column">
+        <span class="venue">{{ item.venue }}</span>
+        <span class="location">{{ item.location }}</span>
+      </div>
+      <div class="button-wrapper" v-if="showBtn">
+        <a :href="item.ticketsUrl" role="button" class="button" target="_blank">Tickets</a>
+      </div>
+    </li>
 
-      <li class="d-flex">
-        <div class="time d-flex flex-column">
-          <span class="month">Jan</span>
-          <span class="date">18</span>
-        </div>
-        <a href="#" class="place d-flex flex-column">
-          <span class="venue">Acme Comedy Co.</span>
-          <span class="location">Minneapolis, MN</span>
-        </a>
-      </li>
-
-      <li class="d-flex">
-        <div class="time d-flex flex-column">
-          <span class="month">Jan</span>
-          <span class="date">19</span>
-        </div>
-        <a href="#" class="place d-flex flex-column">
-          <span class="venue">Acme Comedy Co.</span>
-          <span class="location">Minneapolis, MN</span>
-        </a>
-      </li>
-
-      <li class="d-flex">
-        <div class="time d-flex flex-column">
-          <span class="month">Jan</span>
-          <span class="date">20</span>
-        </div>
-        <a href="#" class="place d-flex flex-column">
-          <span class="venue">Acme Comedy Co.</span>
-          <span class="location">Minneapolis, MN</span>
-        </a>
-      </li>
-
-      <li class="d-flex">
-        <div class="time d-flex flex-column">
-          <span class="month">Jan</span>
-          <span class="date">24</span>
-        </div>
-        <a href="#" class="place d-flex flex-column">
-          <span class="venue">Acme Comedy Co.</span>
-          <span class="location">Minneapolis, MN</span>
-        </a>
-      </li>
-
-    </ul>
-  </div>
+  </ul>
 </div>
 </template>
 
 <script>
+import events from '../../events.json'
+
 export default {
-  name: "UpcomingShows"
+  name: "UpcomingShows",
+  props: {
+    showBtn: Boolean
+  },
+  data() {
+    return {
+      events: events
+    }
+  }
 }
 </script>

@@ -1,20 +1,20 @@
 [
   {
-    "month": "Jan",
+    "month": "Apr",
     "date": "17",
     "venue": "Test Comedy Club",
     "location": "Locationville, MN",
     "ticketsUrl": "http://chrisstack.co"
   },
   {
-    "month": "Feb",
+    "month": "Apr",
     "date": "18",
     "venue": "Acme Comedy Co.",
     "location": "Minneapolis, MN",
     "ticketsUrl": "http://chrisstack.co"
   },
   {
-    "month": "Mar",
+    "month": "Apr",
     "date": "19",
     "venue": "Test Comedy Club",
     "location": "Locationville, MN",
@@ -28,7 +28,7 @@
     "ticketsUrl": "http://chrisstack.co"
   },
   {
-    "month": "May",
+    "month": "Apr",
     "date": "24",
     "venue": "Test Comedy Club",
     "location": "Locationville, MN",

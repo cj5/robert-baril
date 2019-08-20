@@ -8,7 +8,7 @@
               <h2>Upcoming Shows</h2>
               <ul>
 
-                <UpcomingShows showBtn />
+                <UpcomingShows showBtn isLivePage />
 
               </ul>
             </div>

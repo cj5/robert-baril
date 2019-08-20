@@ -18,16 +18,18 @@
           <h3 class="mb-5">Latest Facebook Posts</h3>
           <div class="d-flex justify-content-center">
             <ul>
-              <li class="d-flex flex-column" v-for="(item, key) in fbPosts" :key="key">
-                <span class="fb-date d-flex">
-                  <FacebookIcon />
-                  <div class="icon-wrapper">
-                    <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
-                  </div>
-                  {{ item.created_time | moment('timezone', 'America/Chicago', 'MMMM D [at] h:m A') }}
-                </span>
-                <span>{{ item.message }}</span>
-              </li>
+              <a :href="i.permalink_url" target="_blank" v-for="(i, key) in fbPosts" :key="key">
+                <li class="d-flex flex-column">
+                  <span class="fb-date d-flex">
+                    <FacebookIcon />
+                    <div class="icon-wrapper">
+                      <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
+                    </div>
+                    {{ i.created_time | moment('timezone', 'America/Chicago', 'MMMM D [at] h:m A') }}
+                  </span>
+                  <span>{{ i.message }}</span>
+                </li>
+              </a>
             </ul>
           </div>
         </div>
@@ -43,8 +45,8 @@ import Contact from './Contact'
 
 // Rapid Traverse id = 122630115501148
 const apiBase = 'https://graph.facebook.com/';
-const apiQuery = 'me?fields=id,name,posts.limit(5){id,message,created_time}';
-const apiToken = 'EAAmpE2pjvacBAItMmecYbkqrtOVNZBK9nMroHAO2HDZCv0GkIYTubBZBI8UCFX72JmDU8ZCfhxl6Mi1V3p4bIWGH0HGNE35PNf0iKK5ts9wLFHjVSvAbovvmXY9Lb2FVsPLsPqM3wEFcHdbZB0miBHhcyTavMIA0zZBWlZC8elhaDJQQfhaWSng';
+const apiQuery = 'me?fields=id,name,posts.limit(8){id,message,created_time,permalink_url}';
+const apiToken = 'EAAlkdRzjgukBAKA9yeCut81Ai9reryZCBSS16NQdPNMULRTlH6AkmYUccWx8mZBfeNTstDEnFmSopZC68U9AHeIcoEl0i8dv4aHS7fyXI96PA9oRR612ZB2CSVvdgOUvyC4v6ak3v6n0dnsA8Ls9bOZAWSUiio4UZD';
 
 const api = apiBase+apiQuery+'&access_token='+apiToken;
 

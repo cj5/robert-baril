@@ -7,6 +7,7 @@
   }
   .home .upcoming-shows {
     top: 250px;
+    max-width: 300px;
   }
   @media #{$bp-xl} {
     .home .upcoming-shows {

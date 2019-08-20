@@ -1,37 +1,16 @@
 [
   {
-    "month": "Apr",
-    "date": "17",
-    "venue": "Test Comedy Club",
-    "location": "Locationville, MN",
-    "ticketsUrl": "http://chrisstack.co"
-  },
-  {
-    "month": "Apr",
-    "date": "18",
-    "venue": "Acme Comedy Co.",
+    "month": "Nov",
+    "date": "29",
+    "venue": "The Comedy Corner Underground - 7 Corners",
     "location": "Minneapolis, MN",
-    "ticketsUrl": "http://chrisstack.co"
+    "ticketsUrl": "https://www.eventbrite.com/e/robert-baril-tickets-60539911505"
   },
   {
-    "month": "Apr",
-    "date": "19",
-    "venue": "Test Comedy Club",
-    "location": "Locationville, MN",
-    "ticketsUrl": "http://chrisstack.co"
-  },
-  {
-    "month": "Apr",
-    "date": "20",
-    "venue": "Acme Comedy Co.",
+    "month": "Nov",
+    "date": "30",
+    "venue": "The Comedy Corner Underground - 7 Corners",
     "location": "Minneapolis, MN",
-    "ticketsUrl": "http://chrisstack.co"
-  },
-  {
-    "month": "Apr",
-    "date": "24",
-    "venue": "Test Comedy Club",
-    "location": "Locationville, MN",
-    "ticketsUrl": "http://chrisstack.co"
+    "ticketsUrl": "https://www.eventbrite.com/e/robert-baril-tickets-60539911505"
   }
 ]

@@ -11,7 +11,7 @@
             <img src="../assets/images/baril-stand-up.jpg" alt="Robert Baril stand up" class="w-100">
           </div>
           <div class="col-md-6 pr-md-0 d-flex align-items-center">
-            <p class="fz-15">Robert Baril has been writing and performing comedy in the Twin Cities since 2009. In 2017, his debut album 'Sex and Politics' was released on Grammy winning Stand Up Records, and his radio show 'Laughing Matters with Robert Baril' has been playing on the AM 950 airwaves for the last six years.  Raised on a steady diet of Dennis Miller and George Carlin, Robert combines a sharp, current event tackling wit with clever twists on every day observations. He has been a regular at Acme Comedy Company in Minneapolis since 2014, and has performed as part of the 10,000 Laughs and Laughing Devil Comedy Festivals.</p>
+            <p class="fz-15">Robert Baril has been writing and performing comedy in the Twin Cities since 2009. In 2017, his debut album 'Sex and Politics' was released on Grammy winning Stand Up Records, and his radio show 'Laughing Matters with Robert Baril' has been playing on the AM 950 airwaves for the last six years. Raised on a steady diet of Dennis Miller and George Carlin, Robert combines a sharp, current event tackling wit with clever twists on every day observations. He has been a regular at Acme Comedy Company in Minneapolis since 2014, and has performed as part of the 10,000 Laughs and Laughing Devil Comedy Festivals.</p>
           </div>
         </div>
         <div class="content feed">
@@ -19,13 +19,13 @@
           <div class="d-flex justify-content-center">
             <ul>
               <a :href="i.permalink_url" target="_blank" v-for="(i, key) in fbPosts" :key="key">
-                <li class="d-flex flex-column">
+                <li class="d-flex flex-column" v-if="i.message">
                   <span class="fb-date d-flex">
                     <FacebookIcon />
                     <div class="icon-wrapper">
                       <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
                     </div>
-                    {{ i.created_time | moment('timezone', 'America/Chicago', 'MMMM D [at] h:m A') }}
+                    {{ i.created_time | moment('timezone', 'America/Chicago', 'MMMM D [at] h:mm A') }}
                   </span>
                   <span>{{ i.message }}</span>
                 </li>
@@ -42,10 +42,11 @@
 <script>
 import axios from 'axios'
 import Contact from './Contact'
+import FacebookIcon from './svg/FacebookIcon'
 
 // Rapid Traverse id = 122630115501148
 const apiBase = 'https://graph.facebook.com/';
-const apiQuery = 'me?fields=id,name,posts.limit(8){id,message,created_time,permalink_url}';
+const apiQuery = 'me?fields=id,name,posts.limit(8){id,message,created_time,permalink_url,full_picture}';
 const apiToken = 'EAAlkdRzjgukBAKA9yeCut81Ai9reryZCBSS16NQdPNMULRTlH6AkmYUccWx8mZBfeNTstDEnFmSopZC68U9AHeIcoEl0i8dv4aHS7fyXI96PA9oRR612ZB2CSVvdgOUvyC4v6ak3v6n0dnsA8Ls9bOZAWSUiio4UZD';
 
 const api = apiBase+apiQuery+'&access_token='+apiToken;
@@ -53,7 +54,8 @@ const api = apiBase+apiQuery+'&access_token='+apiToken;
 export default {
   name: "RouteBio",
   components: {
-    Contact
+    Contact,
+    FacebookIcon
   },
   data() {
     return {
